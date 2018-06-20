@@ -1,6 +1,10 @@
 my name is ashok babu
 my volleyball
 my favourate game is basketball
+<target name="run" depends="package" description="run the package">
+<java jar="build/jars/Helloworld.jar" fork="true"/>
+</target>
+</project>
 my favourate game is kabaddi father name is prasad
 
 

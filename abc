@@ -6,4 +6,8 @@ my favourate game is volleyball
 my favourate food is biryanii
 my favourate game is kabaddi
 rbs is the one of the top bigmnc company in the world
+<target name="package" depends="compile" description="packaing the the file">
+<mkdir dir="build/jars"/>
+<jar destfile="build/jars/Helloworld.jar" basedir="build/classes">
+<manifest>
 delhi is the capital of the india
