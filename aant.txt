@@ -9,9 +9,11 @@
 <manifest>
 <attribute name="main-class" value="Helloworld"/>
 </manifest>
+my name is ashok babu
 </jar>
 </target>
 <target name="run" depends="package" description="run the package">
 <java jar="build/jars/Helloworld.jar" fork="true"/>
 </target>
+my father name is prasad
 </project>
