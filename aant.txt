@@ -1,0 +1,19 @@
+<project name="java tasks" default="run">
+<target name="compile" description="compile the java files">
+<mkdir dir="build/classes"/>
+<javac srcdir="src" destdir="build/classes"/>
+</target>
+<target name="package" depends="compile" description="packaing the the file">
+<mkdir dir="build/jars"/>
+<jar destfile="build/jars/Helloworld.jar" basedir="build/classes">
+<manifest>
+<attribute name="main-class" value="Helloworld"/>
+</manifest>
+my name is ashok babu
+</jar>
+</target>
+<target name="run" depends="package" description="run the package">
+<java jar="build/jars/Helloworld.jar" fork="true"/>
+</target>
+my father name is prasad
+</project>
